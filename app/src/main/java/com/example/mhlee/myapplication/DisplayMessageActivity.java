@@ -32,14 +32,18 @@ public class DisplayMessageActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-
+        //Get Indent
         Intent intent = getIntent();
+        //Get Message with KEY
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        //Create TextView Object
         TextView textView = new TextView(this);
         textView.setTextSize(40);
+        //Set String
         textView.setText(message);
 
         RelativeLayout layout = (RelativeLayout) findViewById(R.id.content);
+        //Add TextView to content
         layout.addView(textView);
     }
 
