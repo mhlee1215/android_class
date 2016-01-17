@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         String message = editText.getText().toString();
         //set message
         intent.putExtra(EXTRA_MESSAGE, message);
-        //Start new activity.
+        //Start new activity..
         startActivity(intent);
     }
 }
